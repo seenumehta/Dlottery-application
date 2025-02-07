@@ -9,7 +9,7 @@ contract lottry {
         manager = msg.sender ;
     }
     receive() external payable {
-        require(msg.value == 1 ether);
+        require(msg.value == 0.000003 ether);
         participants.push(payable(msg.sender));
      }
      function getBalance() public view returns 
